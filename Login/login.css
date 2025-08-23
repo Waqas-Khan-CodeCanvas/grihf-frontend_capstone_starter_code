@@ -1,55 +1,109 @@
-/* Styles for the main container */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b3b3b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container */
 .container {
-    max-width: 900px; /* Maximum width of the container */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 40px; /* Padding inside the container */
-    margin-top: 10%; /* Top margin of 10% */
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
 }
 
-/* Styles for form groups */
-.form-group {
-    margin-bottom: 20px; /* Bottom margin for spacing between form groups */
+/* Login form */
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Styles for form group labels */
-.form-group label {
-    display: block; /* Make labels display as block elements */
-    margin-bottom: 5px; /* Bottom margin for spacing below labels */
-    font-weight: bold; /* Bold text for labels */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Styles for form controls */
-.form-control {
-    width: 40%; /* Width of form controls */
-    padding: 8px; /* Padding inside form controls */
-    font-size: 16px; /* Font size of form controls */
-    border: 1px solid #ccc; /* Border around form controls */
-    border-radius: 4px; /* Border radius for rounded corners */
+/* Form fields */
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
 }
 
-/* Styles for button groups */
-.btn-group {
-    margin-top: .0001px; /* Top margin for spacing above button groups */
-    margin-bottom: 20px; /* Bottom margin for spacing below button groups */
+form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
-/* Styles for buttons */
-.btn {
-    padding: 10px 20px; /* Padding inside buttons */
-    font-size: 16px; /* Font size of buttons */
-    border: none; /* No border for buttons */
-    border-radius: 4px; /* Border radius for rounded corners on buttons */
-    cursor: pointer; /* Cursor style on hover for buttons */
+/* Forgot password link */
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  color: blue;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-/* Styles for primary buttons */
-.btn-primary {
-    background-color: #007bff; /* Background color for primary buttons */
-    color: #fff; /* Text color for primary buttons */
+/* Buttons */
+.login-btn {
+  width: 100%;
+  background-color: #4c6ef5;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
-/* Styles for danger (red) buttons */
-.btn-danger {
-    background-color: #dc3545; /* Background color for danger buttons */
-    color: #fff; /* Text color for danger buttons */
+.reset-btn {
+  width: 100%;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Signup text */
+.signup-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 20px;
+  }
+
+  .login-btn, .reset-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
 }

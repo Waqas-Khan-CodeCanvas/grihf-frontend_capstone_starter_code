@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is part of a digital initiative by **StayeHealthy**, a non-profit organization focused on improving healthcare accessibility in remote areas with minimal or no medical resources. The goal is to create a user-friendly web-based platform that helps patients book consultations with doctors and specialists, manage health records, and access essential healthcare services — anytime, anywhere.
+This project is part of a digital initiative by **HealthCare**, a non-profit organization focused on improving healthcare accessibility in remote areas with minimal or no medical resources. The goal is to create a user-friendly web-based platform that helps patients book consultations with doctors and specialists, manage health records, and access essential healthcare services — anytime, anywhere.
 
 ## Problem Statement
 
